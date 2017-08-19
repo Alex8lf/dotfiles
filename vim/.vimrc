@@ -5,6 +5,10 @@ set number
 syntax on
 set clipboard=unnamedplus "Makes Vim use the system clipboard as the default register
 
+" Use case insensitive search, except when using capital letters
+set ignorecase
+set smartcase
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
